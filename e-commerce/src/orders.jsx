@@ -20,6 +20,11 @@ const Order = () =>{
     const setorder= useSetRecoilState(orderAtom)
     const [loading,setLoading]= useState(null);
     const Logintoken = localStorage.getItem('Token');
+    const formattedDate = new Date(orderedItems.orderPlaced).toLocaleDateString("en-US", {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+      });
     const handleClick = ()=>{
         Navigate("/items");
     }
@@ -65,6 +70,9 @@ useEffect(()=>{
        return(
          <div>
             <Viewitemdetails sinitem={sinItem}/>
+            <Typography variant="h6" component="h2"style={{ textAlign: 'center'}}>
+            OrderedDate:{formattedDate}
+</Typography>
           </div>
           
           )
