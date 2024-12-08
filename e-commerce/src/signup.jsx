@@ -47,10 +47,10 @@ const Signup =()=>{
 </Typography>
            <div
    style={{
-    display: 'flex', // Enable Flexbox layout
-    justifyContent: 'center', // Center horizontally
-    alignItems: 'center', // Center vertically
-    height: '100vh' // Full viewport height
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh'
   }}
 >
 
