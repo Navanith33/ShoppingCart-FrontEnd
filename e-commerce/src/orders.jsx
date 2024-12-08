@@ -60,6 +60,9 @@ useEffect(()=>{
     }
     return(
         <>
+        <Typography variant="h4" component="h1" style={{ textAlign: 'center', marginBottom: '20px' }}>
+  Your Order History
+</Typography>
          <div
       style={{
         display: 'flex',flexWrap: 'wrap',
